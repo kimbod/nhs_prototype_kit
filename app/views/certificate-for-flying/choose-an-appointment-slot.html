@@ -1,0 +1,41 @@
+{% extends 'templates/nhs_layout.html' %}
+
+{% block pageTitle %}NHS.UK prototyping kit{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<h1 class="heading-xlarge">Choose an appointment for your safe to fly certificate</h1>
+
+	<div class="form-group">
+    	<input type="radio" id="1" name="appointment"> 
+    	<label class="form-label form-control-radio" for="1">
+    		2pm today (19th August) with Doctor West (female)	
+    	</label>
+    	<input type="radio" id="2" name="appointment"> 
+    	<label class="form-label form-control-radio" for="2">
+      		3pm today (19th August) with Doctor North (male, speaks Urdu)
+    	</label>
+    	<input type="radio" id="3" name="appointment"> 
+    	<label class="form-label form-control-radio" for="3">
+    		10am tomorrow (20th August) with Doctor South (female)	
+    	</label>
+    	<input type="radio" id="4" name="appointment"> 
+    	<label class="form-label form-control-radio" for="4">
+      		2pm Friday 21st August with Doctor North (male, speaks Urdu)
+    	</label>
+  </div>
+
+	<a href="#">See more appointments</a>
+
+	<p></p>
+
+	<div class="form-group">
+	    	<a class="button" href="choose-an-appointment-type">Next</a>
+	    	<a href="">Cancel</a>
+	   	</div>
+
+</main>
+
+{% endblock %}

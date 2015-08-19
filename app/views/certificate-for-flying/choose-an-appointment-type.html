@@ -1,0 +1,37 @@
+{% extends 'templates/nhs_layout.html' %}
+
+{% block pageTitle %}NHS.UK prototyping kit{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<h1 class="heading-xlarge">Choose your appointment type for your safe to fly certificate</h1>
+
+    <p>What type of appointment do you want with Doctor North, at 3pm today (19th August) ?</p>
+
+	<div class="form-group">
+    	<input type="radio" id="1" name="type"> 
+    	<label class="form-label form-control-radio" for="1">
+    		At the Park View surgery in Solihull. <a href="#">Get directions</a>	
+    	</label>
+    	<input type="radio" id="2" name="type"> 
+    	<label class="form-label form-control-radio" for="2">
+      		Telephone
+    	</label>
+    	<input type="radio" id="3" name="type"> 
+    	<label class="form-label form-control-radio" for="3">
+    		Video call
+    	</label>
+    </div>
+
+	<p>The doctor will FaceTime you on 07760 113 768 <a href="#">Change this</a></p>
+
+	<div class="form-group">
+	    	<a class="button" href="choose-an-appointment-confirmation">Book Appointment</a>
+	    	<a href="">Cancel</a>
+	   	</div>
+
+</main>
+
+{% endblock %}
